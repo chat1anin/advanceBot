@@ -2,7 +2,10 @@ from aiogram import Bot, Dispatcher
 from aiogram.types import BotCommand
 from aiogram.fsm.storage.memory import MemoryStorage
 from handlers import profile, documents
+import sys
 import os
+
+sys.path.append(os.path.dirname(__file__))
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
